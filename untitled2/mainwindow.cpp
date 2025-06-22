@@ -123,9 +123,7 @@ void MainWindow::sendDataImitation() {
     anim->setEndValue(1.0);
     anim->start(QAbstractAnimation::DeleteWhenStopped);
 
-    QTimer::singleShot(600, this, [=]() {
-        animateTextTyping("✅ Data sent successfully!");
-    });
+
 }
 
 void MainWindow::paintEvent(QPaintEvent*) {
